@@ -13,9 +13,8 @@
 #import "Open.h"
 
 @implementation PortraitOnlyQLPreviewController
-- (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) interfaceOrientation
-{
-  return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
 @end
 
