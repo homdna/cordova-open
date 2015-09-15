@@ -1,21 +1,8 @@
-/**
- * Open.m
- *
- * Copyright (C) 2015 Carlos Antonio
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- */
-
 #import "Open.h"
 
 @implementation PortraitOnlyQLPreviewController
-- (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) interfaceOrientation
-{
-  return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
 @end
 
